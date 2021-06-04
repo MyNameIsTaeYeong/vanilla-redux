@@ -2,13 +2,16 @@ import { useState } from "react";
 
 function Home() {
   const [text, setText] = useState("");
+
   function onChange(e) {
     setText(e.target.value);
   }
+
   function onSubmit(e) {
     e.preventDefault();
     setText("");
   }
+
   return (
     <>
       <h1>To Do</h1>
